@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Default Suite" thread-count="2" parallel="classes">
+  <test name="javaday1">
+    <classes>
+      <class name="GridTest" >
+        <methods>
+          <include name="gridTest2"/>
+        </methods>
+      </class> <!-- GridTest -->
+      <class name="LoginTest" >
+      </class> <!-- GridTest -->
+    </classes>
+  </test> <!-- javaday1 -->
+</suite> <!-- Default Suite -->
