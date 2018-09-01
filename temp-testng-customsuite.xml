@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Default Suite" thread-count="2" parallel="classes">
+<suite name="Default Suite" thread-count="2" parallel="methods">
   <test name="javaday1">
     <classes>
-      <class name="GridTest" >
+      <!--<class name="GridTest" >-->
+        <!--<methods>-->
+          <!--<include name="gridTest2"/>-->
+        <!--</methods>-->
+      <!--</class> &lt;!&ndash; GridTest &ndash;&gt;-->
+      <class name="Test0" >
         <methods>
-          <include name="gridTest2"/>
-        </methods>
-      </class> <!-- GridTest -->
-      <class name="LoginTest" >
-      </class> <!-- GridTest -->
+          <include name="byClassName"></include>
+                </methods>
+    </class> <!-- GridTest -->
     </classes>
   </test> <!-- javaday1 -->
 </suite> <!-- Default Suite -->
