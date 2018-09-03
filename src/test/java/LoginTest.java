@@ -39,13 +39,13 @@ public class LoginTest {
   @Test (dataProvider = "userList")
     public  void  loginTest(String userName,String paw) throws InterruptedException {
         Thread.sleep(3000);
-        //控制权转到frame
+        //控制权转到frame    广东省鬼地方个第三方广东省广东省高的地方
         driver.switchTo().frame("x-URS-iframe");
         //定位、输入用户名
         //定位、输入密码
         //点击登录
       LoginLogic.login(userName,paw,driver);
-        Thread.sleep(5000);
+//        Thread.sleep(5000);
      /* Boolean bl=driver.findElement(By.linkText("更换手机")).isDisplayed();
         Assert.assertTrue(bl);*/
         //driver.findElement(By.xpath(".//*[test()='登录']")).click();
